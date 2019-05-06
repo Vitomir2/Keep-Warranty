@@ -42,6 +42,7 @@ public class SearchActivity extends AppCompatActivity {
                     return;
                 } else {
                     String log = "";
+                    String isFoundTxt = "Warranty doesn't exist in our database.";
                     for (Warranty currWarr : warrs) {
                         if (searchingID == currWarr.getID()) {
                             log = "ID: " + currWarr.getID() + "\n" +
@@ -50,8 +51,10 @@ public class SearchActivity extends AppCompatActivity {
                         }
                     }
 
+                    if (log != "") isFoundTxt = "Warranty is found!";
+
                     showWarrBox.setText(log);
-                    Toast.makeText(SearchActivity.this, "Warranty is found!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SearchActivity.this, isFoundTxt, Toast.LENGTH_SHORT).show();
                     clearWarrantyField();
                     return;
                 }

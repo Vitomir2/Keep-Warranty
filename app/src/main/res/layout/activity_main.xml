@@ -7,6 +7,18 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/warrantyNoTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:numeric="integer"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText2" />
+
+    <EditText
         android:id="@+id/dateTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -25,7 +37,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="96dp"
+        android:editable="false"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:text="Validity Date:"
         app:layout_constraintBottom_toTopOf="@+id/addWarrBtn"
@@ -52,7 +67,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="17dp"
+        android:editable="false"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:text="Item Name:"
         app:layout_constraintBottom_toTopOf="@+id/editText10"
@@ -67,25 +85,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="21dp"
+        android:editable="false"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:text="Warranty No:"
         app:layout_constraintBottom_toTopOf="@+id/editText3"
         app:layout_constraintEnd_toStartOf="@+id/warrantyNoTxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <EditText
-        android:id="@+id/warrantyNoTxt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:numeric="integer"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText2" />
 
     <Button
         android:id="@+id/addWarrBtn"
