@@ -46,8 +46,8 @@ public class SearchActivity extends AppCompatActivity {
                     for (Warranty currWarr : warrs) {
                         if (searchingID == currWarr.getID()) {
                             log = "ID: " + currWarr.getID() + "\n" +
-                                  "Item Name: " + currWarr.getItemName() + "\n" +
-                                  "Validity Date: "  + currWarr.getDate();
+                                  "Description: " + currWarr.getItemName() + "\n" +
+                                  "Expiration Date: "  + currWarr.getDate();
                         }
                     }
 

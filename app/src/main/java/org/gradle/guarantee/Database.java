@@ -126,5 +126,4 @@ public class Database extends SQLiteOpenHelper {
         db.delete(TABLE_NAME, KEY_ID + " = ?", new String[] { String.valueOf(warr.getID()) });
         db.close();
     }
-
 }
